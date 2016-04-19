@@ -44,11 +44,14 @@
     color: #fefefe;
     margin-bottom: 0px;
     font-size: 1.4rem;
+    font-weight: 600;
+    font-style: italic;
 }
 
 .post-head .post-meta .post-date{
     font-size: 1.5rem;
     margin-top: 2rem;
+    font-weight: 600;
 }
 
 @media screen and (max-width: 550px){
@@ -156,10 +159,55 @@ figcaption{
     margin-bottom: 50px;
 }
 
-section.post-content p:first-child{
+section.post-content > p:first-child{
     font-weight: 600;
     font-size: 1.2em;
 }
+
+/* bigger blockquotes */
+blockquote{
+    font-size: 3.0rem;
+    line-height: 3.8rem;
+    text-align: center;
+    border-left: 3px solid #FF6E00;
+    color: #73706E;
+    font-weight: 400;
+    margin: 2.75em 0 2.75em -0.4em;
+}
+
+blockquote p{
+    padding: 0 1.75em 0 0;
+}
+
+
+@media only screen and (max-width: 900px){
+    blockquote{
+        border-left: 0px solid #FF6E00 ;
+        padding: 0 1.75em;
+        margin: 2.75em 0;
+        font-weight: 300;
+    }
+    blockquote p{
+        padding: 0;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    blockquote{
+        font-size: 2.4rem;
+        line-height: 3.5rem;
+        padding: 0 1em
+    }
+}
+
+
+/* twitter widget button iframes */
+blockquote p iframe{
+    margin: 20px auto;
+/*    float: right;*/
+    clear: both;
+}
+
 /*
 
 h1, h2, h3, h4, h5, h6{
