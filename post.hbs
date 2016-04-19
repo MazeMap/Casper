@@ -7,23 +7,61 @@
 {{#post}}
 
 <header class="main-header post-head {{#if image}}" style="background-image: url({{image}}){{else}}no-cover{{/if}}">
+    {{#if image}}<div aria-hidden="true" class="mm-header-image-overlay"></div>{{/if}}
     <nav class="main-nav {{#if image}}overlay{{/if}} clearfix">
         {{#if @blog.logo}}<a class="blog-logo" href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="{{@blog.title}}" /></a>{{/if}}
         {{#if @blog.navigation}}
             <a class="menu-button icon-menu" href="#"><span class="word">Menu</span></a>
         {{/if}}
     </nav>
+    {{#if image}}
+        <div class="vertical">
+        <div class="main-header-content inner">
+            <h1 class="page-title">{{title}}</h1>
+
+            {{! Everything inside the #author tags pulls data from the author }}
+            {{#author}}
+<!--
+
+                {{#if image}}
+                <figure class="author-image">
+                    <a class="img" href="{{url}}" style="background-image: url({{image}})"><span class="hidden">{{name}}'s Picture</span></a>
+                </figure>
+                {{/if}}
+-->
+                <section class="post-meta">
+                    {{#if image}}
+                    <figure class="author-image">
+                        <a class="img" href="{{url}}" style="background-image: url({{image}})"><span class="hidden">{{name}}'s Picture</span></a>
+                    </figure>
+                    {{/if}}
+                    
+                    <h6 class="author-name">by <a href="{{url}}">{{name}}</a></h6>
+
+                    {{#if bio}}
+                        <p class="author-bio">{{bio}}</p>
+                    {{/if}}
+                    <time class="post-date" datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMMM YYYY"}}</time> {{tags prefix=" on "}}
+                </section>
+
+            {{/author}}
+        </div>
+    </div>
+    {{/if}}
 </header>
 
 <main class="content" role="main">
     <article class="{{post_class}}">
-
+        
+        {{#if image}}
+        {{else}}
         <header class="post-header">
             <h1 class="post-title">{{title}}</h1>
             <section class="post-meta">
                 <time class="post-date" datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMMM YYYY"}}</time> {{tags prefix=" on "}}
             </section>
         </header>
+        {{/if}}
 
         <section class="post-content">
             {{content}}

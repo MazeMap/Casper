@@ -183,7 +183,7 @@ html {
 body {
     height: 100%;
     max-height: 100%;
-    font-family: "Merriweather", serif;
+    font-family: 'Source Sans Pro', 'Open Sans', open-sans, sans-serif;
     letter-spacing: 0.01rem;
     font-size: 1.8rem;
     line-height: 1.75em;
@@ -210,7 +210,8 @@ h4, h5, h6 {
     color: #2E2E2E;
     line-height: 1.15em;
     margin: 0 0 0.4em 0;
-    font-family: "Open Sans", sans-serif;
+    font-family: 'Source Sans Pro', 'Open Sans', open-sans, sans-serif;
+    text-transform: uppercase;
     text-rendering: geometricPrecision;
 }
 
@@ -247,7 +248,7 @@ a {
 }
 
 a:hover {
-    color: #111;
+    color: #003D5D;
 }
 
 p, ul, ol, dl {
@@ -305,7 +306,7 @@ hr {
 blockquote {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    margin: 1.75em 0 1.75em -2.2em;
+    margin: 2.75em 0 2.75em -2.2em;
     padding: 0 0 0 1.75em;
     border-left: #4A4A4A 0.4em solid;
 }
@@ -524,7 +525,7 @@ body.nav-opened .site-wrapper {
 
 .main-nav a {
     text-decoration: none;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Source Sans Pro', 'Open Sans', open-sans, sans-serif;
 }
 
 /* Navigation */
@@ -699,7 +700,7 @@ body.nav-opened .nav {
     color: #111 !important; /* Overides `.nav a:link, .nav a:visited` colour */
     text-align: center;
     font-size: 12px;
-    font-family: "Open Sans", sans-serif;
+    font-family: 'Source Sans Pro', 'Open Sans', open-sans, sans-serif;
     text-transform: uppercase;
     text-decoration: none;
     line-height: 35px;
@@ -799,7 +800,8 @@ body.nav-opened .nav {
     line-height: 35px;
     white-space: nowrap;
     border-radius: 3px;
-    transition: all 0.5s ease;
+    transition: all 0.2s ease;
+    background: #fff;
 }
 .menu-button:before {
     font-size: 12px;
@@ -809,7 +811,7 @@ body.nav-opened .nav {
     top: 1px;
 }
 .menu-button:hover {
-    background: #fff;
+    background: #003D5D;
 }
 .menu-button:focus {
     outline: 0;
@@ -817,21 +819,21 @@ body.nav-opened .nav {
 
 /* When the navigation is closed */
 .nav-closed .menu-button {
-    color: #fff;
+    color: #333;
     border-color: rgba(255, 255, 255, 0.6);
 }
 .nav-closed .menu-button:hover {
-    color: #222;
+    color: #fff;
 }
 
 /* When the navigation is closed and there is no cover image */
 .nav-closed .no-cover .menu-button {
-    border-color: #BFC8CD;
-    color: #9EABB3;
+    border-color: #ABABAB ;
+    color: #333;
 }
 .nav-closed .no-cover .menu-button:hover {
     border-color: #555;
-    color: #555;
+    color: #fff;
 }
 
 /* When the navigation is opened */
@@ -871,7 +873,7 @@ body.nav-opened .nav {
     font-size: 5rem;
     letter-spacing: -1px;
     font-weight: 700;
-    font-family: "Open Sans", sans-serif;
+    font-family: 'Source Sans Pro', 'Open Sans', open-sans, sans-serif;
     color: #fff;
 }
 
@@ -880,7 +882,7 @@ body.nav-opened .nav {
     font-size: 2rem;
     line-height: 1.5em;
     font-weight: 400;
-    font-family: "Merriweather", serif;
+    font-family: 'Source Sans Pro', 'Open Sans', open-sans, sans-serif;
     letter-spacing: 0.01rem;
     color: rgba(255,255,255,0.8);
 }
@@ -962,7 +964,7 @@ body:not(.post-template) .post-title {
 .post-meta {
     display: block;
     margin: 1.75rem 0 0 0;
-    font-family: "Open Sans", sans-serif;
+    font-family: 'Source Sans Pro', 'Open Sans', open-sans, sans-serif;
     font-size: 1.5rem;
     line-height: 2.2rem;
     color: #9EABB3;
@@ -1151,7 +1153,7 @@ body:not(.post-template) .post-title {
     color: #9EABB3;
 }
 .author-meta a:hover {
-    color: #111;
+    color: #003D5D;
 }
 
 /* Create some space to the right for the share links */
@@ -1258,7 +1260,7 @@ body:not(.post-template) .post-title {
     box-sizing: border-box;
     display: block;
     position: absolute;
-    top: -40px;
+    top: -58px;
     left: 50%;
     margin-left: -40px;
     width: 80px;
@@ -1311,7 +1313,7 @@ body:not(.post-template) .post-title {
 /* Location, website, and link */
 .author-profile .author-meta {
     margin: 2rem 0;
-    font-family: "Merriweather", serif;
+    font-family: 'Source Sans Pro', 'Open Sans', open-sans, sans-serif;
     letter-spacing: 0.01rem;
     font-size: 1.7rem;
 }
@@ -1397,7 +1399,7 @@ body:not(.post-template) .post-title {
     padding: 4px 10px 5px;
     text-transform: uppercase;
     font-size: 1.1rem;
-    font-family: "Open Sans", sans-serif;
+    font-family: 'Source Sans Pro', 'Open Sans', open-sans, sans-serif;
     color: rgba(255,255,255,0.8);
     border: rgba(255,255,255,0.5) 1px solid;
     border-radius: 4px;
@@ -1489,7 +1491,7 @@ body:not(.post-template) .post-title {
     width: 80%;
     max-width: 710px;
     margin: 4rem auto;
-    font-family: "Open Sans", sans-serif;
+    font-family: 'Source Sans Pro', 'Open Sans', open-sans, sans-serif;
     font-size: 1.3rem;
     color: #9EABB3;
     text-align: center;
@@ -1573,7 +1575,7 @@ body:not(.post-template) .post-title {
     position: relative;
     margin: 8rem 0 0 0;
     padding: 1rem 15px;
-    font-family: "Open Sans", sans-serif;
+    font-family: 'Source Sans Pro', 'Open Sans', open-sans, sans-serif;
     font-size: 1rem;
     line-height: 1.75em;
     color: #BBC7CC;
@@ -1779,8 +1781,11 @@ body:not(.post-template) .post-title {
         padding: 0 5px;
         border-radius: 0;
         border-width: 0;
-        color: #2e2e2e;
+        color: #fff;
         background: transparent;
+    }
+    .nav-closed .menu-button{
+        color: #fff;
     }
     .menu-button:hover {
         color: #2e2e2e;
