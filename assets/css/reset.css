@@ -1,0 +1,70 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+/*
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+*/
+
+
+div.reset, span.reset, h1.reset, h2.reset, h3.reset, h4.reset, h5.reset, h6.reset, p.reset, blockquote.reset, pre.reset,
+a.reset, table.reset, caption.reset, ol.reset, ul.reset, li.reset, article.reset, aside.reset, figure.reset, menu.reset, nav.reset, section.reset{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+    box-sizing: border-box;
+}
+
+
+/* HTML5 display-role reset for older browsers */
+article.reset, aside.reset, details.reset, figcaption.reset, figure.reset, 
+footer.reset, header.reset, hgroup.reset, menu.reset, nav.reset, section.reset, main.reset {
+	display: block;
+}
+/*
+body {
+	line-height: 1;
+}
+*/
+ol.reset, ul.reset {
+	list-style: none;
+}
+/*
+blockquote, q {
+	quotes: none;
+}
+*/
+/*
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+*/
+table.reset {
+	border-collapse: collapse;
+	border-spacing: 0;
+}

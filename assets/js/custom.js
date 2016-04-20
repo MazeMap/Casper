@@ -32,14 +32,13 @@
     };
     
     window.findTweetableLinks = function(){
-        console.log('@ findTweetableLinks');
+
         var links = $("blockquote p a");
         var tweetableLinks = $.grep(links, function(item, i){
-            console.log('@ tweetable link? ', $(item) );
+            //console.log('@ tweetable link? ', $(item) );
             return $(item).attr('href')==="#tweet";
         });
         
-        console.log('@ resulting tweets is: ', tweetableLinks);
         $.each(tweetableLinks, function(i, elem){
             var text = $(elem).text();
             $(elem).hide();
@@ -66,10 +65,19 @@
     
     $document.ready(function () {
 
-        console.log('@ mordi');
-        
         window.findTweetableLinks();
 
+//        $(window).on('scroll resize', function(e,a){
+//            var top = window.scrollY;
+//            var height = window.innerHeight;
+//            var speedFactor = 5.1;
+//            var topOffset = (top/height)*100 * speedFactor;
+//            
+//            $('.main-header-content').css({
+//                "-webkit-transform":"translateY("+ topOffset +"%)",
+//                "-ms-transform":"translateY("+ topOffset +"%)",
+//                "transform":"translateY("+ topOffset +"%)"
+//              });
+//        });
     });
-
 })(jQuery);

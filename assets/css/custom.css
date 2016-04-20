@@ -4,7 +4,7 @@
 
 
 .test-class{
-    color: pink !important;
+    color: #FF6E00 !important;
 }
 .mm-header-image-overlay{
     width: 100%;
@@ -61,8 +61,7 @@
 }
 @media only screen and (max-width: 900px){
     .main-header {
-        padding: 15% 0;
-        padding-bottom: 3%;
+        padding: 0% 0;
     }
 }
 
@@ -213,3 +212,25 @@ blockquote p iframe{
 h1, h2, h3, h4, h5, h6{
     margin-top: 1em;
 }*/
+
+a.read-more{
+    background-color: #EDEBE8;
+    color: #73706E;
+    border-radius: 20px;
+    font-size: .8em;
+    padding: 0px 9px;
+    margin-left: 4px;
+}
+a.read-more:hover{
+    background-color: #FF6E00 ;
+    color: #FFF;
+}
+
+@media only screen and (max-height: 680px){
+    .cd-slider-nav {
+        display: none;
+    }
+    a.scroll-down, .home-template .main-header::after{
+        display: none;
+    }
+}
