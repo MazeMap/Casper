@@ -615,7 +615,7 @@ body.nav-opened .nav {
     color: #fff;
 }
 
-.subscribe-button {
+.subscribe-button, .learn-more-button {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
@@ -637,7 +637,7 @@ body.nav-opened .nav {
     background: #fff;
     transition: all ease 0.3s;
 }
-.subscribe-button:before {
+.subscribe-button:before, .learn-more-button:before {
     font-size: 9px;
     margin-right: 6px;
 }
@@ -1124,6 +1124,9 @@ body:not(.post-template) .post-title {
 .post-footer .share .icon-facebook:hover {
     color: #3b5998;
 }
+.post-footer .share .icon-linkedin-1:hover {
+    color: #0077B5;
+}
 .post-footer .share .icon-google-plus:hover {
     color: #dd4b39;
 }
@@ -1379,6 +1382,7 @@ body:not(.post-template) .post-title {
 }
 
 /* Correctly position site-footer when next to the .read-next container */
+/*
 .read-next + .site-footer {
     position: absolute;
     bottom: 0;
@@ -1386,6 +1390,7 @@ body:not(.post-template) .post-title {
     right: 0;
     margin: 0;
 }
+*/
 
 /* ==========================================================================
    8. Third Party Elements - Embeds from other services
@@ -1502,16 +1507,19 @@ body:not(.post-template) .post-title {
 
 .site-footer {
     position: relative;
-    margin: 8rem 0 0 0;
-    padding: 1rem 15px;
+    margin: 0 0 0 0;
+    padding: 0px;
+    padding-top: 85px;
+    padding-bottom: 0px;
     font-family: 'Source Sans Pro', 'Open Sans', open-sans, sans-serif;
     font-size: 1rem;
     line-height: 1.75em;
-    color: #BBC7CC;
+    background-color: #1D1916;
+    color: #fff;
 }
 
 .site-footer a {
-    color: #BBC7CC;
+    color: #fff;
     text-decoration: none;
     font-weight: bold;
 }

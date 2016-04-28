@@ -234,3 +234,76 @@ a.read-more:hover{
         display: none;
     }
 }
+
+.company-marketing{
+    text-align: center;
+}
+
+.company-marketing *{
+    color: #fff;
+}
+.company-marketing h1{
+    font-size: 3rem;
+    text-transform: none;
+}
+.company-marketing h2{
+    font-size: 2rem;
+    font-weight: 400;
+    text-transform: none;
+    padding: 10px 90px;
+    font-style: italic;
+    color: #989898;
+}
+
+.company-marketing .logo {
+    display: block;
+    height: auto;
+    width: auto;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+section.logo .blog-logo{
+    float: none;
+}
+section.logo .blog-logo img{
+    display: block;
+    margin: 0 auto;
+    height: 100px;
+}
+
+.learn-more-button{
+    position: relative;
+    top: 0px;
+    left: 0px;
+    display: inline-block;
+    color: #F7F7F7 !important;
+    background: #0EACFF;
+}
+.learn-more-button:hover{
+    color:#FFF !important;
+    background: #0084FF !important;
+}
+.site-footer a:hover {
+    border-bottom: 0px;
+}
+
+.powering-customers{
+    margin-top: 50px;
+    font-size: 1.5rem;
+}
+.powering-customers p{
+    color: #989898;
+    padding: 0px 50px;
+}
+
+.customers-image{
+    width: 100%;
+    padding: 20px;
+    background: #FFF;
+    box-sizing: border-box;
+    opacity: .2;
+    transition: opacity .2s linear;
+}
+.customers-image:hover{
+    opacity: .8;
+}
